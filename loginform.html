@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+  </head>
+  <style>
+    form {
+      border: 3px solid #f1f1f1;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 40%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #04aa6d;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 40%;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    .imgcontainer {
+      margin-left: 10%;
+    }
+    img.avatar {
+      width: 20%;
+      border-radius: 50%;
+    }
+    img.login_image {
+      float: right;
+      margin-top: -38%;
+      width: 58%;
+      height: 580px;
+    }
+    .container {
+      padding: 16px;
+    }
+    span.psw {
+      /* margin-left: 20%; */
+      float: left;
+      padding-top: 16px;
+    }
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+    }
+  </style>
+  <body>
+    <form method="post">
+      <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username/Phone</b></label
+        ><br />
+        <input
+          type="text"
+          placeholder="Enter Username/Phone"
+          name="uname"
+          required
+        /><br />
+
+        <label for="psw"><b>Password</b></label
+        ><br />
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        /><br />
+
+        <button type="submit">Login</button><br />
+        <label>
+          <input type="checkbox" name="remember"  /> Remember me
+        </label>
+      </div>
+      <!-- <img
+        src="captcha_code_file.php?rand=<?php echo rand(); ?>"
+        id="captchaimg"
+      />
+      <label for="message">Enter the code above here :</label>
+      <input id="6_letters_code" name="6_letters_code" type="text" /> -->
+
+      <!-- <div class="container" style="background-color:#f1f1f1"> -->
+      <span class="psw">Forgot <a href="#">password?</a></span>
+      <!-- </div> -->
+    </form>
+    <img class="login_image" src="digital-india-main.jpg" />
+  </body>
+</html>
